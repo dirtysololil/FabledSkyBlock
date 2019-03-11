@@ -1,0 +1,15 @@
+name: FabledSkyBlock
+main: com.songoda.fabledskyblock.FabledSkyBlock
+version: gradle-version-number
+api-version: 1.13
+description: A unique SkyBlock plugin
+author: Songoda
+softdepend: [PlaceholderAPI, MVdWPlaceholderAPI, Vault, LeaderHeads]
+loadbefore: [Multiverse-Core]
+commands:
+    island:
+        description: Island command
+        aliases: [is]
+
+    skyblock:
+        description: Skyblock info command.

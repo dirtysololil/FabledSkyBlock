@@ -1,15 +1,15 @@
+image: gradle:alpine
+
+before_script:
+  - export GRADLE_USER_HOME=`pwd`/.gradle
+
 stages:
   - build
-
-cache:
-  paths:
-    - .gradle/wrapper
-    - .gradle/caches
 
 build:
   stage: build
   script:
-    - ./gradlew assemble
+    - gradle assemble
   artifacts:
     paths:
       - build/libs/*.jar

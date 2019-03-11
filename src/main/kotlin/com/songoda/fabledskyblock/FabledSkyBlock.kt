@@ -14,14 +14,11 @@ class FabledSkyBlock : JavaPlugin() {
     override fun onEnable() {
         instance = this
 
-        var test = 1
-        val test2 = 2
-
-        Bukkit.broadcastMessage("We in!")
+        Bukkit.broadcastMessage("Enabled test")
     }
 
     override fun onDisable() {
-        Bukkit.broadcastMessage("We out!")
+        Bukkit.broadcastMessage("Disabled test")
     }
 
 }

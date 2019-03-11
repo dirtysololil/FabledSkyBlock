@@ -9,7 +9,7 @@ stages:
 build:
   stage: build
   script:
-    - gradle assemble
+    - gradle shadowJar
   artifacts:
     paths:
       - build/libs/*.jar
